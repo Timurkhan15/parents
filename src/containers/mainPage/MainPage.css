@@ -1,0 +1,22 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContent a {
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.mainContent a:nth-child(1) {
+    color: lightblue;
+}
+
+.mainContent a:nth-child(2) {
+    color: green;
+}
