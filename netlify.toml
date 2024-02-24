@@ -1,9 +1,0 @@
-[build]
-  command = "npm run build"  # Команда для сборки проекта
-  publish: /dist
-
-[functions]  # Если у вас есть серверные функции
-  directory = "netlify/functions"
-
-[dev]
-  command = "npm run start"  # Команда для запуска проекта в режиме разработки
