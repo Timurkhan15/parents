@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"  # Команда для сборки проекта
-  publish = "build/"  # Директория, из которой Netlify будет раздавать статические файлы
+  publish: /dist
 
 [functions]  # Если у вас есть серверные функции
   directory = "netlify/functions"
