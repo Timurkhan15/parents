@@ -7,7 +7,7 @@ export function NavigationItems() {
       <NavigationItem to="/" end>
         Главная
       </NavigationItem>
-      <NavigationItem to="/admin" end>
+      <NavigationItem to="/login" end>
         Редактирование
       </NavigationItem>
     </ul>

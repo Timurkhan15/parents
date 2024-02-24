@@ -1,0 +1,21 @@
+.addNewStudent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addNewStudent input {
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.addNewStudent button {
+    font-size: 20px;
+}
+
+.addNewStudent a {
+    font-size: 20px;
+    margin-top: 300px;
+}
