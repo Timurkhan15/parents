@@ -16,6 +16,7 @@
 }
 
 .addNewStudent a {
-    font-size: 20px;
-    margin-top: 300px;
+    font-size: 30px;
+    color: gray;
+    margin-top: 20px;
 }
