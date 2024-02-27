@@ -16,7 +16,7 @@ import { AddNewSpend } from './containers/AdminPage/AddNewSpend/AddNewSpend'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<MainPage />}></Route>
