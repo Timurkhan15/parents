@@ -3,8 +3,12 @@ import './FinanceSpendsPage.css';
 import { api } from '../../../helpers/axiosApiClient';
 import { Link } from 'react-router-dom';
 
+interface SpendsData {
+    [key: string]: number; 
+}
+
 export function FinanceSpendsPage () {
-    const [spends, setSpends] = useState<[]>([]);
+    const [spends, setSpends] = useState<SpendsData>({});
 
     useEffect(() => {
         const getSpends = async() => {
@@ -19,7 +23,7 @@ export function FinanceSpendsPage () {
     const spendsId = Object.keys(spends);
     return <div className='spendsFin'>
         <h1>Затраты</h1>
-        {spendsId.map((spendId) => <div className='spend'>
+        {spendsId.map((spendId, i) => <div className='spend' key={i}>
             <h4>{spendId}</h4>
             <p>{spends[spendId]}</p>
         </div>)}

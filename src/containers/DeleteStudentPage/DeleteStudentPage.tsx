@@ -21,7 +21,7 @@ export function DeleteStudentPage () {
     
     const deleteHandler = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const id = e.target[0].value;
+        const id = (e.currentTarget.elements[0] as HTMLSelectElement).value;
         if (id === 'Выберите ребенка') {
             alert('Вы не выбрали ребенка!');
         } else {
@@ -32,9 +32,9 @@ export function DeleteStudentPage () {
 
     return <form className='deleteForm' onSubmit={(e) => deleteHandler(e)}>
         <h1>Удалить ребенка</h1>
-        <select>
-            <option disabled selected>Выберите ребенка</option>
-            {studentsId.map((id) => <option value={id}>{id}</option>)}
+        <select defaultValue={'123'}>
+            <option disabled value={'123'}>Выберите ребенка</option>
+            {studentsId.map((id, i) => <option value={id} key={i}>{id}</option>)}
         </select>
         <button type='submit'>Удалить</button>
         <Link to='/admin'>Назад</Link>
