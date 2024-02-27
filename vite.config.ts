@@ -2,7 +2,6 @@
 import { defineConfig } from 'vite';
 import { copyRedirectsConfig } from './configs/copyRedirectsConfig';
 
-
 export default defineConfig({
   // ... остальные настройки ...
   build: {
@@ -12,7 +11,7 @@ export default defineConfig({
       },
     },
   },
-  plugins:[
+  plugins: [
     copyRedirectsConfig,
   ],
 });
