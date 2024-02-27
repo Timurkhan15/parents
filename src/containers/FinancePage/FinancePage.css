@@ -1,0 +1,14 @@
+.finDiv .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.buttons a {
+    font-size: 30px;
+    color: gray;
+    margin-top: 30px;
+}

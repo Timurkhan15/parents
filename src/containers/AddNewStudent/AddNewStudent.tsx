@@ -1,14 +1,14 @@
 import { useState } from "react"
 import { api } from "../../helpers/axiosApiClient";
 import './AddNewStudent.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export function AddNewStudent () {
     const [directory, setDirectory] = useState<string>('');
     const [name, setName] = useState<string>('');
     const [parent, setParent] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
-
+    const navigate = useNavigate();
     const saveHandler = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
@@ -16,7 +16,7 @@ export function AddNewStudent () {
             'Content-Type': 'application/json',
         }});
         console.log(response);
-        
+        navigate('/admin');
     };
 
     return <form className="addNewStudent" onSubmit={(e) => saveHandler(e)}>

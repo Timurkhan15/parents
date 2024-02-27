@@ -23,6 +23,7 @@ export default function Modal({ student, show, close }: Props) {
         <h2>{student.name}</h2>
         <p className='parentName'>Родитель: <br /> {student.parent}</p>
         <p className="phone">Номер родителя: <br /> {student.phone}</p>
+        <p>ID ребенка: {student.id}</p>
       </div>
     </>
   );

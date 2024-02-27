@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 import { api } from '../../helpers/axiosApiClient';
 import './ClassList.css';
 import { Student } from '../../components/Student/Student';
+import { Link } from 'react-router-dom';
 
 export interface IStudent {
     name: string;
     parent: string;
     phone: string;
+    id: string;
 }
 
 export function ClassList () {
@@ -30,5 +32,6 @@ export function ClassList () {
         <div className="classListUl">
             {classList.map((student, i) => <Student student={student} key={i}/>)}
         </div>
+        <Link to='/'>Назад</Link>
     </div>
 }

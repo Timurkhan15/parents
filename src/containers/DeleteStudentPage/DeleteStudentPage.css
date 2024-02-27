@@ -1,0 +1,19 @@
+.deleteForm select {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.deleteForm h1 {
+    font-size: 30px;
+}
+
+.deleteForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.deleteForm a {
+    font-size: 20px;
+    color: gray;
+    margin-top: 20px;
+}

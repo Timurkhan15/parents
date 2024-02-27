@@ -1,3 +1,7 @@
+.adminContent h1 {
+    font-size: 40px;
+}
+
 .adminContent a {
     font-size: 20px;
     color: rgb(51, 50, 50);
@@ -5,4 +9,10 @@
     padding: 10px;
     border-radius: 10px;
     background: lightgray;
+    margin-bottom: 20px;
+}
+
+.adminContent {
+    display: flex;
+    flex-direction: column;
 }
