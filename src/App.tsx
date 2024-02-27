@@ -5,11 +5,13 @@ import { MainPage } from './containers/MainPage/MainPage'
 import { ClassList } from './containers/ClassList/ClassList'
 import { Login } from './containers/Login/Login'
 import { AdminPage } from './containers/AdminPage/AdminPage'
-import { AddNewStudent } from './containers/AddNewStudent/AddNewStudent'
 import { FinancePage } from './containers/FinancePage/FinancePage'
 import { FinanceInPage } from './containers/FinancePage/FinanceInPage/FinanceInPage'
 import { FinanceSpendsPage } from './containers/FinancePage/FinanceSpendsPage/FinanceSpendsPage'
-import { DeleteStudentPage } from './containers/DeleteStudentPage/DeleteStudentPage'
+import { DeleteStudentPage } from './containers/AdminPage/DeleteStudentPage/DeleteStudentPage'
+import { AddNewStudent } from './containers/AdminPage/AddNewStudent/AddNewStudent'
+import { AddNewInSum } from './containers/AdminPage/AddNewInSum/AddNewInSum'
+import { AddNewSpend } from './containers/AdminPage/AddNewSpend/AddNewSpend'
 
 function App() {
 
@@ -26,6 +28,8 @@ function App() {
           <Route path='/finances/in' element={<FinanceInPage />}></Route>
           <Route path='/finances/spends' element={<FinanceSpendsPage />}></Route>
           <Route path='/deleteStudent' element={<DeleteStudentPage />}></Route>
+          <Route path='/addNewInSum' element={<AddNewInSum />}></Route>
+          <Route path='/addNewSpend' element={<AddNewSpend />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

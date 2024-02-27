@@ -1,0 +1,20 @@
+.addNewSpend h1 {
+    font-size: 35px;
+}
+
+.addNewSpend {
+    display: flex;
+    flex-direction: column;
+}
+
+.addNewSpend input {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.addNewSpend a {
+    font-size: 30px; 
+    color: gray;
+    margin-top: 50px;
+}

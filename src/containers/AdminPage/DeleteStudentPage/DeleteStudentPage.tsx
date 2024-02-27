@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './DeleteStudentPage.css';
-import { api } from '../../helpers/axiosApiClient';
+import { api } from '../../../helpers/axiosApiClient';
 import { Link, useNavigate } from 'react-router-dom';
 
 export function DeleteStudentPage () {

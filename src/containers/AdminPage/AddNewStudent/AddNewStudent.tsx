@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { api } from "../../helpers/axiosApiClient";
 import './AddNewStudent.css';
 import { Link, useNavigate } from "react-router-dom";
+import { api } from "../../../helpers/axiosApiClient";
 
 export function AddNewStudent () {
     const [directory, setDirectory] = useState<string>('');
