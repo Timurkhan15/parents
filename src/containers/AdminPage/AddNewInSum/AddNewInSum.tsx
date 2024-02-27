@@ -30,7 +30,7 @@ export function AddNewInSum () {
         } else {
             const response = await api.get(`/finances/inSum/${id}.json`);
             const currentAmount = response.data || 0;
-            const newAmount = currentAmount + parseFloat(sum);
+            const newAmount = currentAmount + parseFloat(sum);            
 
             await api.put(`/finances/inSum/${id}.json`, newAmount);
 

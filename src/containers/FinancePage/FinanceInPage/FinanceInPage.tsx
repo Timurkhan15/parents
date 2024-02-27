@@ -40,9 +40,9 @@ export function FinanceInPage () {
     return <div className='inFin'>
         <h1>Пополнения</h1>
         {classId.map((studentId, i) =>         
-            <div className='student' key={i}>
+            <div className='student' key={i} style={{background: inSum[studentId] > 0 ? 'green' : 'red'}}>
                 <h4>{classList[studentId] ? classList[studentId].name : 'Загрузка...'}</h4> 
-                <p style={{background: inSum[studentId] > 0 ? 'green' : 'red'}}>{inSum[studentId]}</p>
+                <p>{inSum[studentId]}</p>
             </div>
         )}
         <Link to='/finances'>Назад</Link>
